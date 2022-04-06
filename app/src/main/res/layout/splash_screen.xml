@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/iv1"
+        android:src="@drawable/goflyx_icon_new"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey7"
+        android:gravity="center"
+        android:fontFamily="@font/medium"
+        android:textSize="@dimen/text_14"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_below="@id/iv1"
+        android:text="Powered by XCSPL, Since 2015"/>
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookasGuestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_id_prim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_butten"
+            android:hint="Mail Id"
+            android:drawableLeft="@drawable/ic_email"
+            android:padding="@dimen/padding_10"
+            android:drawableTint="@color/colorPrimary"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="@dimen/padding_10"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:padding="@dimen/padding_10"
+                android:text="India +91"
+                android:background="@drawable/white_butten"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawableTint="@color/b_five"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"/>
+            <LinearLayout
+                android:background="@drawable/white_butten"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinn_countrycode"
+                    android:layout_gravity="center">
+
+                </Spinner>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/mobile_prime"
+                android:maxLength="15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:background="@drawable/white_butten"
+                android:padding="@dimen/padding_10"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="Mobile Number"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:drawablePadding="@dimen/padding_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:inputType="phone"
+                android:digits="0123456789"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="Your Booking details will be sent to this email address."></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+
+            android:text="We will use this number to send possible update alert "></TextView>
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+
+            android:text="I have Travelomatrix password"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:layout_marginTop="@dimen/margin_20"
+            android:padding="@dimen/text_12"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:background="@drawable/bg_orangeaccept"
+
+            android:text="BOOK AS A GUEST"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_marginTop="@dimen/margin_15"
+
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_15">
+
+            <ImageView
+                android:id="@+id/facebook_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:src="@drawable/ic_facebook"/>
+
+            <ImageView
+                android:id="@+id/google_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:visibility="visible"
+                android:src="@drawable/ic_google"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

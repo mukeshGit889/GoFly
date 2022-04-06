@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myaccount.kyc.KycActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_design" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="12dp"
+            android:layout_marginLeft="5dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/width_30"
+                android:text=""
+                android:id="@+id/tv_nameFirst"
+
+                android:gravity="center"
+                android:textSize="@dimen/text_14"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/circle_img_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Savan Jain"
+                    android:id="@+id/tv_name"
+                    android:fontFamily="@font/hind"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Savanjain@gmail.com"
+                    android:fontFamily="@font/hind"
+                    android:id="@+id/tv_email"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/black_tex"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KYC verification Process"
+            android:layout_marginTop="30dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/hind"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:fontFamily="@font/hind"
+
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:gravity="center"
+            android:textSize="@dimen/text_16"
+            android:text="Complete the verification process and get the GoFlyX premium services."/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/margin_10"
+
+            android:layout_margin="@dimen/margin_20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:textSize="14sp"
+                    android:id="@+id/et_name"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:hint="Name(As in ID Proof)"></EditText>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:textSize="14sp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:id="@+id/et_countycode"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:drawableTint="@color/black"
+                    android:drawableRight="@drawable/ic_down_arrow"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:hint="Mobile Country Code"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:id="@+id/et_mobile"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:hint="Mobile Number"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:textSize="14sp"
+                    android:id="@+id/et_email_id"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:hint="Email ID"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:textSize="14sp"
+                    android:id="@+id/et_dob"
+                    android:focusable="false"
+                    android:drawableTint="@color/black"
+                    android:drawableRight="@drawable/ic_down_arrow"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:hint="DOB"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:textSize="14sp"
+                    android:id="@+id/et_address"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:hint="Complete Address"></EditText>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:textSize="14sp"
+                    android:id="@+id/et_idno"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:hint="Proof ID No"></EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="@dimen/width_200"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5"
+                        app:cardCornerRadius="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+
+                            android:padding="@dimen/margin_5"
+
+                            android:id="@+id/tv_uploadIdproof"
+
+                            android:hint="Upload the ID Proof">
+
+                        </TextView>
+                    </android.support.v7.widget.CardView>
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfilePhoto"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:visibility="gone"
+
+
+                        android:src="@drawable/user_dummy" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="@dimen/width_100"
+                    android:layout_height="@dimen/width_100"
+                    android:layout_gravity="center"
+                    android:id="@+id/iv_kycstatus"
+                    android:layout_marginTop="@dimen/margin_10"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_150"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/tv_upload"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:background="@drawable/blue_butten"
+
+                    android:text="Upload"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

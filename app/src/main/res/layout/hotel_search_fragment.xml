@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+<android.support.v4.widget.NestedScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/bottom_end"
+    android:background="@color/all_page_bg"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_text"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:padding="05dp"
+                android:tint="@color/white"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_hotel_new"
+                android:layout_marginTop="@dimen/margin_15" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:layout_marginTop="05dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:id="@+id/search_city_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="jaipur"
+                android:fontFamily="@font/medium"
+                android:layout_marginBottom="@dimen/margin_10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_30"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/city_name"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:background="@drawable/white_butten"
+                android:hint="@string/city_name"
+                android:padding="@dimen/padding_15"
+                android:textColor="@color/black"
+
+                android:layout_marginRight="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableLeft="@drawable/location_icon"
+                android:drawablePadding="@dimen/padding_10"/>
+
+            <LinearLayout
+                android:id="@+id/date_picker_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_20">
+
+                <LinearLayout
+                    android:id="@+id/check_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/gray_outline">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_in"
+                        android:fontFamily="@font/regular"
+                        android:textSize="@dimen/text_12"
+                        android:drawableTint="@color/colorPrimary"
+
+                        android:drawableLeft="@drawable/ic_calendar_new"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/padding_10"
+                        android:paddingLeft="@dimen/padding_15"
+                        android:paddingRight="@dimen/padding_15"
+                        android:paddingTop="@dimen/padding_5"
+                        android:paddingBottom="@dimen/padding_5"
+                        android:textColor="@color/black"
+                        android:background="@drawable/gray_top_curved"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/week_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/padding_15"
+                            android:fontFamily="@font/medium"
+                            android:paddingTop="@dimen/margin_10"
+                            android:paddingRight="@dimen/padding_15"
+                            android:paddingBottom="@dimen/padding_5"
+                            android:text="Friday"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_14" />
+
+
+                        <TextView
+                            android:id="@+id/date_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/padding_15"
+                            android:paddingTop="@dimen/padding_5"
+                            android:paddingRight="@dimen/padding_15"
+                            android:paddingBottom="@dimen/padding_5"
+                            android:text="02"
+                            android:textColor="@color/blue"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/month_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/medium"
+
+                            android:paddingLeft="@dimen/padding_15"
+                            android:paddingTop="@dimen/padding_5"
+                            android:paddingRight="@dimen/padding_15"
+                            android:paddingBottom="@dimen/padding_15"
+                            android:text="March"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_14" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/check_out"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:background="@drawable/gray_outline">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_out"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/regular"
+                        android:textSize="@dimen/text_12"
+                        android:drawableTint="@color/colorPrimary"
+
+                        android:drawableLeft="@drawable/ic_calendar_new"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/padding_10"
+                        android:paddingLeft="@dimen/padding_15"
+                        android:paddingRight="@dimen/padding_15"
+                        android:paddingTop="@dimen/padding_5"
+                        android:paddingBottom="@dimen/padding_5"
+
+
+                        android:background="@drawable/gray_top_curved"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/to_week_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Friday"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/medium"
+
+                            android:paddingLeft="@dimen/padding_15"
+                            android:paddingTop="@dimen/margin_10"
+                            android:paddingBottom="@dimen/padding_5"
+                            android:paddingRight="@dimen/padding_15"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_14" />
+
+                        <TextView
+                            android:id="@+id/to_date_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/padding_15"
+                            android:paddingTop="@dimen/padding_5"
+                            android:paddingRight="@dimen/padding_15"
+                            android:paddingBottom="@dimen/padding_5"
+                            android:text="02"
+                            android:textColor="@color/blue"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/to_month_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="March"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/medium"
+
+                            android:paddingLeft="@dimen/padding_15"
+                            android:paddingTop="@dimen/padding_5"
+                            android:paddingBottom="@dimen/padding_15"
+                            android:paddingRight="@dimen/padding_15"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_14" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/night_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:background="@drawable/white_butten"
+                android:hint="@string/night_count"
+                android:padding="@dimen/padding_15"
+                android:textColor="@color/black"
+                android:drawableTint="@color/black"
+                android:drawableEnd="@drawable/ic_down_arrow"
+
+                android:layout_marginRight="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <LinearLayout
+                    android:id="@+id/guest_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:background="@drawable/gray_outline">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_15"
+                        android:paddingRight="@dimen/padding_15"
+                        android:paddingTop="@dimen/padding_5"
+                        android:paddingBottom="@dimen/padding_5"
+                        android:background="@drawable/gray_top_curved">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:id="@+id/icon1"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/ic_guest_new"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guests"
+                            android:fontFamily="@font/regular"
+                            android:textSize="@dimen/text_12"
+                            android:layout_toEndOf="@+id/icon1"
+                            android:layout_marginStart="05dp"
+                            android:layout_centerVertical="true"
+
+                            android:textColor="@color/black"
+
+                            android:gravity="center_vertical"
+
+
+                           />
+
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/padding_15"
+                            android:paddingTop="@dimen/padding_15"
+                            android:paddingBottom="@dimen/padding_5"
+
+                            android:paddingRight="@dimen/padding_15"
+                            android:text="01"
+                            android:textColor="@color/blue"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/passenger_detail_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="01 AD 00 CH"
+                            android:paddingLeft="@dimen/padding_15"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/medium"
+
+                            android:paddingTop="@dimen/padding_5"
+                            android:paddingBottom="@dimen/padding_20"
+                            android:paddingRight="@dimen/padding_15"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_14" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/room_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:background="@drawable/gray_outline">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_15"
+                        android:paddingRight="@dimen/padding_15"
+                        android:paddingTop="@dimen/padding_5"
+                        android:paddingBottom="@dimen/padding_5"
+                        android:background="@drawable/gray_top_curved">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:id="@+id/icon2"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/ic_bed_new"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rooms"
+                            android:fontFamily="@font/regular"
+                            android:textSize="@dimen/text_12"
+                            android:layout_toEndOf="@+id/icon2"
+                            android:layout_marginStart="05dp"
+                            android:layout_centerVertical="true"
+
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:drawablePadding="@dimen/padding_10"
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/room_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:text="01"
+                            android:paddingLeft="@dimen/padding_15"
+                            android:paddingTop="@dimen/padding_15"
+                            android:paddingBottom="@dimen/padding_5"
+                            android:paddingRight="@dimen/padding_15"
+                            android:gravity="center"
+                            android:textSize="35sp"
+                            android:textColor="@color/blue"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Room"
+                            android:paddingLeft="@dimen/padding_15"
+                            android:paddingTop="@dimen/padding_5"
+                            android:paddingBottom="@dimen/padding_20"
+                            android:paddingRight="@dimen/padding_15"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/medium"
+
+                            android:gravity="center"
+                            android:textSize="@dimen/text_14" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/search_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10"
+                android:text="@string/search"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bold"
+                android:background="@drawable/blue_butten"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_20"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_end"
+        android:paddingTop="10dp"
+        android:elevation="05dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_flight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivhome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/flight_grey_bottom" />
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flight"
+                android:textColor="@color/dark_gray"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_10"
+                android:textAllCaps="true"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hotels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/hotel_grey_bottom"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Hotels"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_10" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivconsult"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/bus_grey_bottom"/>
+
+            <TextView
+                android:id="@+id/tvconsult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus"
+                android:textColor="@color/dark_gray"
+                android:textAllCaps="true"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_10"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_holidays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/iv_account"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/holiday_grey_bottom"
+
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Holidays"
+                android:textColor="@color/dark_gray"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_10" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivMore"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/more_grey_bottom"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="@color/dark_gray"
+                android:textAllCaps="true"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_10"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

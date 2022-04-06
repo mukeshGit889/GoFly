@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myaccount.agent.AddAgentActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_name"
+                android:focusable="false"
+                android:background="@null"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Mobile Number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_mobileno"
+                android:focusable="false"
+                android:background="@null"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Email Id"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_emailId"
+                android:background="@null"
+               android:focusable="false"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="Agent Settlement Account Details"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Account holder Name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_accountHolderName"
+                android:background="@null"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Account Number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:inputType="number"
+                android:id="@+id/et_accountNo"
+                android:background="@null"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Select Bank"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_bank"
+                android:focusable="false"
+                android:background="@null"
+                android:drawableEnd="@drawable/ic_arrow_down_24"
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="IFSC Code"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_ifsccode"
+                android:background="@null"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Select Account Type"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:drawableEnd="@drawable/ic_arrow_down_24"
+
+                android:focusable="false"
+
+                android:id="@+id/et_accountType"
+
+                android:background="@null"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Pan Number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_panno"
+                android:background="@null"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Branch"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_branch"
+                android:background="@null"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+
+                android:text="Other Details"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Select T-Shirt Size"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:focusable="false"
+                android:id="@+id/et_tshirt"
+                android:background="@null"
+                android:drawableEnd="@drawable/ic_arrow_down_24"
+
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Shipping Address"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_shippingAddress"
+                android:background="@null"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/text_12"
+
+                android:text="Shipping Pincode"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/et_pincode"
+                android:background="@null"
+                android:inputType="number"
+
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray"/>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:text="By Signing up you accept our terms &amp;conditions."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/tv_submit"
+                android:layout_marginTop="@dimen/margin_20"
+                android:padding="@dimen/margin_15"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/padding_30"
+                android:background="@drawable/rectangel_orange"
+                android:text="Submit"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

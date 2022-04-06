@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".carhire.CarHireActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="From"
+            android:textColor="@color/Gray"
+
+            android:textSize="@dimen/text_12" />
+
+        <EditText
+            android:id="@+id/et_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@null"
+
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="To"
+            android:textColor="@color/Gray"
+
+            android:textSize="@dimen/text_12" />
+
+        <EditText
+            android:id="@+id/et_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@null"
+
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="Start Date"
+            android:textColor="@color/Gray"
+
+            android:textSize="@dimen/text_12" />
+
+        <EditText
+            android:id="@+id/et_departure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@null"
+            android:focusable="false"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:drawableTint="@color/colorPrimary"
+
+            android:drawableEnd="@drawable/ic_calendar_new"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="Return Date"
+            android:textColor="@color/Gray"
+
+            android:textSize="@dimen/text_12" />
+
+        <EditText
+            android:id="@+id/et_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@null"
+            android:focusable="false"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:drawableTint="@color/colorPrimary"
+
+            android:drawableEnd="@drawable/ic_calendar_new"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="Vehicle Type"
+            android:textColor="@color/Gray"
+
+            android:textSize="@dimen/text_12" />
+
+        <EditText
+            android:id="@+id/et_vehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@null"
+            android:focusable="false"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+
+            android:visibility="visible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/travellers"
+
+                android:padding="@dimen/padding_5"
+                android:textSize="@dimen/text_14"/>
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_outline"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/sp_ad_count"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Adults"
+                android:gravity="center"
+                android:textColor="@color/orange_text"
+                android:textSize="@dimen/text_12"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_outline"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/sp_ch_count"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Children"
+                android:gravity="center"
+                android:textColor="@color/orange_text"
+                android:textSize="@dimen/text_12"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/sp_in_count"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Infants"
+                android:gravity="center"
+                android:textColor="@color/orange_text"
+                android:textSize="@dimen/text_12"/>
+                </LinearLayout>
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_outline"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_adult"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="1 Adults"
+                        android:fontFamily="@font/medium"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5"
+                        android:textColor="@color/orange_text"
+                        android:textSize="@dimen/text_14"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_outline"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_child"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/medium"
+
+                        android:layout_height="match_parent"
+                        android:text="0 Children"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5"
+                        android:textColor="@color/orange_text"
+                        android:textSize="@dimen/text_14"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_infant"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="0 Infants"
+                        android:fontFamily="@font/medium"
+
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5"
+                        android:textColor="@color/orange_text"
+                        android:textSize="@dimen/text_14"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="Comments"
+            android:textColor="@color/Gray"
+            android:textSize="@dimen/text_12" />
+
+        <EditText
+            android:id="@+id/et_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@null"
+
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="Contact Details"
+            android:textColor="@color/Gray"
+            android:textSize="@dimen/text_12" />
+
+        <EditText
+            android:id="@+id/et_contactDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:background="@null"
+
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/padding_30"
+            android:background="@drawable/rectangel_orange"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:padding="@dimen/margin_15"
+            android:text="Send"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

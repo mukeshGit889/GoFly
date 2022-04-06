@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_page_bg"
+    android:clickable="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/banner_view"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/white"
+                    android:layout_marginEnd="05dp"
+                    android:src="@drawable/holiday_icon_new"
+                    android:layout_gravity="center" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/umbrellaImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Country"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="India"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16" />
+
+                </LinearLayout>
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/country"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/text_16"
+                     android:fontFamily="@font/regular"/>
+-->
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/search_city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_18"
+                    android:text="Location"
+                    android:fontFamily="@font/bold"
+                    android:layout_marginTop="@dimen/margin_10"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_18"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:textColor="@color/blue"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:text="Country"/>
+
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/country_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:background="@drawable/white_butten"
+                    android:hint="Country"
+                    android:text="All"
+                    android:padding="@dimen/padding_15"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:gravity="center_vertical"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawableRight="@drawable/ic_down_arrow"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_18"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingTop="@dimen/padding_5"
+                    android:textColor="@color/blue"
+                    android:text="Package Type"/>
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/package_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:background="@drawable/white_butten"
+                    android:hint="@string/holiday_type"
+                    android:text="All Package Type"
+                    android:padding="@dimen/padding_15"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:gravity="center_vertical"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawableRight="@drawable/ic_down_arrow"
+                    android:layout_marginTop="@dimen/margin_10"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_18"
+                    android:textColor="@color/blue"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingTop="@dimen/padding_5"
+                    android:text="Duration"/>
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:background="@drawable/white_butten"
+                    android:hint="@string/package_duration"
+                    android:text="All Duration"
+                    android:padding="@dimen/padding_15"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ic_down_arrow"
+                    android:layout_marginTop="@dimen/margin_10"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_18"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingTop="@dimen/padding_5"
+                    android:textColor="@color/blue"
+                    android:text="Budget"/>
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/tv_budget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:background="@drawable/white_butten"
+                    android:hint="Budget"
+                    android:text="All"
+                    android:padding="@dimen/padding_15"
+                    android:drawableTint="@color/colorPrimary"
+
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ic_down_arrow"
+                    android:layout_marginTop="@dimen/margin_10"
+                    />
+
+               <!-- <TextView
+                    android:id="@+id/search_holiday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_15"
+                    android:text="@string/search"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/bold"
+                    android:background="@drawable/blue_butten"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_20"/>
+-->
+                <TextView
+                    android:id="@+id/search_holiday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/blue_butten"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_10"
+                    android:text="@string/search"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular Deals"
+                    android:layout_marginTop="@dimen/padding_30"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/package_list"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_end"
+        android:paddingTop="10dp"
+        android:elevation="05dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_flight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivhome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/flight_grey_bottom" />
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flight"
+                android:textColor="@color/dark_gray"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_10"
+                android:textAllCaps="true"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hotels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/hotel_grey_bottom"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Hotels"
+                android:textColor="@color/dark_gray"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_10" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivconsult"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/bus_grey_bottom"/>
+
+            <TextView
+                android:id="@+id/tvconsult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus"
+                android:textColor="@color/dark_gray"
+                android:textAllCaps="true"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_10"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_holidays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/iv_account"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/holiday_grey_bottom"
+
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Holidays"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_10" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivMore"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:src="@drawable/more_grey_bottom"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="@color/dark_gray"
+                android:textAllCaps="true"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_10"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

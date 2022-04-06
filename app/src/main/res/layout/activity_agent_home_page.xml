@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myaccount.agent.AgentHomePageActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_15"
+            android:id="@+id/linear_agent"
+            android:background="@drawable/rectangel_grey"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/width_40"
+                android:src="@drawable/agent_icon"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ad Agent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:textSize="@dimen/text_16"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register Now"
+                android:id="@+id/tv_register"
+                android:background="@drawable/rectangel_orange"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:paddingTop="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_10"
+                android:textSize="@dimen/text_14"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/margin_20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Welcome Kit"
+                android:id="@+id/tv_buy"
+                android:background="@drawable/rectangel_orange"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:paddingTop="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_10"
+                android:textSize="@dimen/text_14"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/margin_20"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_15"
+            android:background="@drawable/rectangel_grey"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/width_40"
+                android:layout_gravity="center"
+                android:src="@drawable/wallet_ic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Available balance"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_16"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_20"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INR 0"
+                android:id="@+id/tv_walletAmount"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_16"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Redeem to wallet"
+                    android:id="@+id/tv_redeem_to_wallet"
+
+
+                    android:background="@drawable/curve_orange"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:textSize="@dimen/text_14"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/colorPrimary"
+                   />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Settelment"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:id="@+id/tv_settlement"
+
+                    android:background="@drawable/rectangel_orange"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:textSize="@dimen/text_14"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rechargesuccessimg"
+    tools:context=".myaccount.giftcard.GiftPurchaseSuccessfulActivity">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_design" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/l1"
+
+        android:layout_marginLeft="@dimen/margin_5"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/width_30"
+            android:text=""
+            android:id="@+id/tv_nameFirst"
+            android:gravity="center"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/circle_img_bg"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Savan Jain"
+                android:id="@+id/tv_name"
+                android:fontFamily="@font/hind"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Savanjain@gmail.com"
+                android:fontFamily="@font/hind"
+
+                android:id="@+id/tv_email"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:id="@+id/cv_purchasegiftcard"
+            app:cardElevation="3dp"
+
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/iv_rechare"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/giftcard_icon">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purchased Cards"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/hind"
+
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/iv_rechare"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/l1"
+        android:background="@color/black_tex"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:fontFamily="@font/hind"
+
+        android:textSize="30sp"
+        android:id="@+id/tv_rechargesuccess"
+        android:textColor="@color/black"
+        android:text="Your Gift Purchase was Successful"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/tv_referenceId"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/tv_rechargesuccess"
+        android:fontFamily="@font/hind"
+
+        android:text="App Reference ID"/>
+
+    <TextView
+        android:layout_width="@dimen/width_150"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/tv_rechargedetails"
+        android:background="@drawable/blue_buttonshape"
+        android:padding="@dimen/margin_10"
+        android:layout_centerInParent="true"
+        android:text="Purchase Details" />
+</RelativeLayout>

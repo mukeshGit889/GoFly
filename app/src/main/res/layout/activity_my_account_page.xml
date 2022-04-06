@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".myaccount.MyAccountPageActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="@dimen/elevation_10"
+            android:layout_marginLeft="@dimen/margin_15"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/width_40"
+                android:text=""
+                android:id="@+id/tv_nameFirst"
+                android:gravity="center"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/circle_img_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Savan Jain"
+                    android:id="@+id/tv_name"
+                    android:fontFamily="@font/hind"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Savanjain@gmail.com"
+                    android:id="@+id/tv_email"
+                    android:fontFamily="@font/hind"
+
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/black_tex"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_15"
+            android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/linear_profile"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/profile_new"
+                android:tint="@color/blue" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:textSize="@dimen/text_12"
+
+                android:textColor="@color/black"
+                android:text="Profile"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/linear_mytrips"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:tint="@color/blue"
+                android:src="@drawable/mytrip_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/black"
+                android:text="My Trips"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/linear_giftcard"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:tint="@color/blue"
+                android:src="@drawable/gift_card_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/black"
+                android:text="Gift Card"/>
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linear_wallet"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/blue"
+                    android:layout_gravity="center"
+                    android:src="@drawable/wallet_icon_new"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/black"
+                    android:text="Wallet"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linear_supercashback"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/blue"
+                    android:layout_gravity="center"
+                    android:src="@drawable/supercash_icon_new"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/black"
+                    android:text="Supercash"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linear_wallettowallet"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:tint="@color/blue"
+                    android:src="@drawable/wallet_to_wallet_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/black"
+                    android:text="Wallet to wallet"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linear_reddemgift"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/blue"
+                    android:layout_gravity="center"
+                    android:src="@drawable/redeem_gift_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/black"
+                    android:text="Redeem Gift"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linear_referearn"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/blue"
+                    android:layout_gravity="center"
+                    android:src="@drawable/refer_earn_icon_new"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/black"
+                    android:text="Refer &amp; Earn"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linear_kyc"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:tint="@color/blue"
+                    android:src="@drawable/kyc_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/black"
+                    android:text="KYC"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linear_adAgent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/blue"
+                    android:layout_gravity="center"
+                    android:src="@drawable/agent_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/black"
+                    android:text="Ad Agent"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/blue"
+                    android:layout_gravity="center"
+                    android:src="@drawable/refer_earn_icon_new"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/black"
+                    android:text="Refer &amp; Earn"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:tint="@color/blue"
+                    android:src="@drawable/kyc_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/black"
+                    android:text="KYC"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

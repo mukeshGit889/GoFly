@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myaccount.agent.WelcomeKitActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/regular"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textSize="@dimen/text_16"
+            android:text="Welcom Kit"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Gray"
+            android:fontFamily="@font/regular"
+
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:textSize="@dimen/text_14"
+            android:text="Product Cost: 2000/-(Inc 18% GST)"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Gray"
+            android:fontFamily="@font/regular"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:textSize="@dimen/text_16"
+            android:text="Description"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Gray"
+            android:fontFamily="@font/regular"
+
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textSize="@dimen/text_14"
+            android:text="With XCSPL Exclusive Welcome Kit, we are making sure that our  executive hero's gets a necessary supporting materials to deliver the business excellence value to customers"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:padding="@dimen/margin_20"
+            android:background="@drawable/dotted_curve_sqaure"
+
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#cc0000"
+                android:fontFamily="@font/regular"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginBottom="@dimen/margin_15"
+                android:textSize="@dimen/text_16"
+                android:text="Package Includes:"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textStyle="bold"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableStart="@drawable/circle_gray"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:textSize="@dimen/text_14"
+                android:text="e-voucher worth INR 2000/-"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textStyle="bold"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableStart="@drawable/circle_gray"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:textSize="@dimen/text_14"
+                android:text="Company T-shirt worth INR 1499/-"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textStyle="bold"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableStart="@drawable/circle_gray"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:textSize="@dimen/text_14"
+                android:text="Company Brochures."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/margin_15"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableStart="@drawable/circle_gray"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:textSize="@dimen/text_14"
+                android:text="Reusable Face Mask"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase"
+            android:id="@+id/tv_buy"
+            android:background="@drawable/rectangel_orange"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/width_30"
+            android:layout_marginEnd="@dimen/padding_30"
+            android:padding="@dimen/margin_15"
+
+
+            android:textSize="@dimen/text_14"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/width_30"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<vector android:height="15dp" android:viewportHeight="44.22"
+    android:viewportWidth="44.22" android:width="15dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#2a3494" android:pathData="M39.038,3.453L36.965,3.453L36.965,0L33.512,0L33.512,3.453h-22.8L10.712,0L7.255,0L7.255,3.453L5.182,3.453A5.188,5.188 0,0 0,0 8.637v30.4A5.188,5.188 0,0 0,5.182 44.22L39.038,44.22a5.188,5.188 0,0 0,5.182 -5.182L44.22,8.637a5.188,5.188 0,0 0,-5.182 -5.183ZM40.765,39.037a1.729,1.729 0,0 1,-1.727 1.727L5.182,40.764a1.729,1.729 0,0 1,-1.727 -1.727v-22.8L40.766,16.237ZM40.765,12.781L3.453,12.781L3.453,8.637A1.729,1.729 0,0 1,5.18 6.91L7.255,6.91v3.453h3.453L10.708,6.91h22.8v3.453h3.453L36.961,6.91h2.073a1.729,1.729 0,0 1,1.727 1.727Z"/>
+    <path android:fillColor="#2a3494" android:pathData="M6.576,19.849h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M13.517,19.849h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M20.336,19.849h3.532v3.41h-3.532z"/>
+    <path android:fillColor="#2a3494" android:pathData="M27.278,19.849h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M34.219,19.849h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M6.576,26.79h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M13.517,26.79h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M20.336,26.79h3.532v3.41h-3.532z"/>
+    <path android:fillColor="#2a3494" android:pathData="M27.278,26.79h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M6.576,33.732h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M13.517,33.732h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M20.336,33.732h3.532v3.41h-3.532z"/>
+    <path android:fillColor="#2a3494" android:pathData="M27.278,33.732h3.41v3.41h-3.41z"/>
+    <path android:fillColor="#2a3494" android:pathData="M34.219,26.79h3.41v3.41h-3.41z"/>
+</vector>

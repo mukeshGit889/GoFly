@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ICIC"
+            android:textColor="@color/black"
+            android:id="@+id/tv_bankName"
+            android:fontFamily="@font/regular"
+            android:padding="@dimen/margin_10"
+            android:textSize="@dimen/text_16"
+            android:gravity="start"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

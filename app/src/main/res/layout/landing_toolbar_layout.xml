@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/white"
+    android:elevation="@dimen/elevation_4">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_open_drawer"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@+id/login_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_pofile_icon"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical"
+
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_nameFirst"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/circle_img_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:id="@+id/linear_wallet"
+            android:layout_marginStart="@dimen/elevation_10"
+            android:layout_toStartOf="@id/tv_title"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:scaleType="fitCenter"
+                android:tint="@color/blue"
+                android:layout_gravity="center"
+                android:src="@drawable/wallet_icon_new"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/tv_walletAmt"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:layout_gravity="center"
+                android:text="Rs 0"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/padding_30"
+            android:text="HOME"
+            android:layout_gravity="center_vertical"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/goflyx_logo"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_currency_sel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/padding_5"
+            android:gravity="end"
+            android:layout_gravity="center_vertical"
+
+            android:layout_margin="@dimen/margin_10"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/currency_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/flag_india"
+                android:layout_toRightOf="@+id/drawer"
+                />
+
+            <TextView
+                android:id="@+id/currency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="INR"
+                android:fontFamily="@font/regular"
+                android:textSize="@dimen/text_14"
+                android:padding="2dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_expand_more"
+                android:layout_toRightOf="@+id/drawer"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

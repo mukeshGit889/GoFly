@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/width_30"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/dialog_shape"
+
+        android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_10"
+        android:src="@drawable/done_tick"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/hind"
+        android:id="@+id/tv_amount_voucher"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        android:text="Amount 5000.00 credited to wallet"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/width_40"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/hind"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        android:text="The Amount has been credited to your wallet succesfully."/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/hind"
+        android:id="@+id/tv_referenceId"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        android:text="TBR-5463855684">
+
+    </TextView>
+
+
+<TextView
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Ok"
+    android:textColor="@color/white"
+    android:textSize="@dimen/text_16"
+    android:id="@+id/tv_ok"
+    android:padding="@dimen/margin_10"
+    android:layout_marginBottom="@dimen/margin_20"
+    android:layout_gravity="center"
+    android:background="@drawable/darkblueshape"
+    android:layout_marginTop="@dimen/width_30"
+    android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rechargesuccessimg"
+
+    tools:context=".myaccount.wallet.RechargeSuccessfulActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_design" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/l1"
+        android:padding="12dp"
+        android:layout_marginLeft="5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/width_30"
+            android:text=""
+            android:id="@+id/tv_nameFirst"
+
+            android:gravity="center"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/circle_img_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Savan Jain"
+                android:fontFamily="@font/hind"
+
+                android:id="@+id/tv_name"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Savanjain@gmail.com"
+                android:fontFamily="@font/hind"
+
+                android:id="@+id/tv_email"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/l1"
+        android:id="@+id/v1"
+        android:background="@color/black_tex"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:fontFamily="@font/hind"
+
+        android:id="@+id/tv_rechargesuccess"
+        android:textColor="@color/black"
+        android:text="Your Recharge was Successful"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:fontFamily="@font/hind"
+
+        android:textSize="18sp"
+        android:id="@+id/tv_referenceId"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/tv_rechargesuccess"
+
+        android:text="App Reference ID"/>
+
+    <TextView
+        android:layout_width="@dimen/width_150"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/tv_rechargedetails"
+        android:background="@drawable/blue_buttonshape"
+        android:padding="@dimen/margin_10"
+        android:layout_centerInParent="true"
+        android:text="Recharge Details" />
+
+
+</RelativeLayout>

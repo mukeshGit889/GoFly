@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lay_corners_white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16"
+
+                android:layout_gravity="center_vertical"
+
+                android:text="Redeem to Wallet"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/width_30"
+                android:layout_gravity="end"
+                android:id="@+id/iv_cancel"
+                android:src="@drawable/ic_close"
+                app:tint="@color/black" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:id="@+id/et_reddem_amount"
+            android:textSize="@dimen/text_14"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/curved_corners"
+            android:hint="Redeem Amount"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textSize="@dimen/text_14"
+            android:id="@+id/et_TDS"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/curved_corners"
+            android:focusable="false"
+            android:inputType="number"
+            android:hint="Value Deduct as TDS"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:id="@+id/et_finalAmount"
+            android:inputType="number"
+            android:focusable="false"
+            android:textSize="@dimen/text_14"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/curved_corners"
+            android:hint="Final Amount Redeem"></EditText>
+
+        <TextView
+            android:layout_width="@dimen/width_150"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_submit"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:background="@drawable/blue_butten"
+
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

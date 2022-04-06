@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/all_page_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:textColor="@color/white"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:id="@+id/from_city_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bold"
+                android:textSize="@dimen/text_18"
+                android:layout_marginTop="@dimen/margin_5"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/bus_icon"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_10"
+            android:layout_marginRight="@dimen/margin_15"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:textColor="@color/white"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:id="@+id/to_city_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bold"
+                android:textSize="@dimen/text_18"
+                android:layout_marginTop="@dimen/margin_5"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/top_view"
+        android:id="@+id/search"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/from_city_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/white_butten"
+            android:hint="@string/from"
+            android:textStyle="bold"
+            android:padding="@dimen/padding_15"
+            android:layout_marginRight="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/location_icon"
+            android:drawablePadding="@dimen/padding_10"/>
+
+        <ImageView
+            android:id="@+id/iv_swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_swap_horiz"
+            android:tint="@color/colorPrimary"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/to_city_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/white_butten"
+            android:hint="@string/to"
+            android:padding="@dimen/padding_15"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/location_icon"
+            android:drawablePadding="@dimen/padding_10"
+            android:layout_marginTop="@dimen/margin_10"/>
+
+        <TextView
+            android:id="@+id/travel_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/white_butten"
+            android:hint="@string/journey_date"
+            android:visibility="gone"
+            android:padding="@dimen/padding_15"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_calendar_indicator"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableTint="@color/black"
+            android:layout_marginTop="@dimen/margin_10"/>
+
+        <LinearLayout
+            android:id="@+id/check_in"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_10"
+            android:layout_marginStart="5dp"
+
+
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/margin_5"
+            android:background="@drawable/gray_outline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Journey Date"
+                android:fontFamily="@font/regular"
+                android:textSize="@dimen/text_12"
+                android:drawableTint="@color/colorPrimary"
+
+                android:drawableLeft="@drawable/ic_calendar_new"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/padding_10"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15"
+                android:paddingTop="@dimen/padding_5"
+                android:paddingBottom="@dimen/padding_5"
+
+                android:textColor="@color/black"
+
+                android:background="@drawable/gray_top_curved"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_15"
+                    android:fontFamily="@font/medium"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingRight="@dimen/padding_15"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:text="Friday"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14" />
+
+
+                <TextView
+                    android:id="@+id/date_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_15"
+                    android:paddingTop="@dimen/padding_5"
+                    android:paddingRight="@dimen/padding_15"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:text="02"
+                    android:textColor="@color/blue"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/month_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/medium"
+
+                    android:paddingLeft="@dimen/padding_15"
+                    android:paddingTop="@dimen/padding_5"
+                    android:paddingRight="@dimen/padding_15"
+                    android:paddingBottom="@dimen/padding_15"
+                    android:text="March"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_bus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold"
+        android:background="@drawable/blue_butten"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/search"
+
+       />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_end"
+        android:paddingTop="10dp"
+        android:elevation="05dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_flight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivhome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/flight_grey_bottom" />
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flight"
+                android:textColor="@color/dark_gray"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_10"
+                android:textAllCaps="true"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hotels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/hotel_grey_bottom"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Hotels"
+                android:textColor="@color/dark_gray"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_10" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivconsult"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:tint="@color/colorPrimary"
+
+                android:src="@drawable/bus_grey_bottom"/>
+
+            <TextView
+                android:id="@+id/tvconsult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_10"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_holidays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/iv_account"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/holiday_grey_bottom"
+
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Holidays"
+                android:textColor="@color/dark_gray"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_10" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivMore"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/more_grey_bottom"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="@color/dark_gray"
+                android:textAllCaps="true"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_10"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

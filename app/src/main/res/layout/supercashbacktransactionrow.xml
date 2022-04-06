@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:padding="@dimen/margin_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@drawable/circle_img_blue"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:tint="@color/black"
+            android:src="@drawable/wallet_icon"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/asap"
+                    android:text="Wallet Recharge"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/greenColor"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:id="@+id/tv_amount"
+                    android:textSize="15sp"
+                    android:text="+1000"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5">
+                <ImageView
+                    android:layout_width="@dimen/margin_20"
+                    android:layout_height="@dimen/margin_20"
+                    android:id="@+id/iv_moneticon"
+                    android:src="@drawable/moneycashback_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_rechargeon"
+                    android:textSize="@dimen/text_12"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/iv_moneticon"
+                    android:text="Recharged on "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_r_date"
+                    android:textSize="@dimen/text_12"
+                    android:layout_marginLeft="3dp"
+
+
+                    android:layout_toRightOf="@+id/tv_rechargeon"
+                    android:text=" 10 May 2020"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_refid"
+                    android:textSize="@dimen/text_12"
+                    android:layout_marginLeft="3dp"
+
+                    android:layout_toRightOf="@+id/tv_r_date"
+                    android:text="WLT16-175"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

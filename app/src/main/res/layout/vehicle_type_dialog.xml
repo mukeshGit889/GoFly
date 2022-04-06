@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hatchback"
+            android:textColor="@color/black"
+            android:id="@+id/tv_savings"
+            android:focusable="false"
+            android:clickable="false"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_5"
+            android:textSize="@dimen/text_16"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indica"
+            android:layout_marginStart="@dimen/margin_15"
+            android:id="@+id/tv_indica"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ritz"
+            android:id="@+id/tv_ritza"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:fontFamily="@font/regular"
+            android:layout_marginStart="@dimen/margin_15"
+
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sedon"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:clickable="false"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_5"
+            android:textSize="@dimen/text_16"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etios"
+            android:layout_marginStart="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:id="@+id/tv_etos"
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dzire"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/tv_dzire"
+            android:fontFamily="@font/regular"
+            android:layout_marginStart="@dimen/margin_15"
+
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xcent"
+            android:id="@+id/tv_xcent"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:fontFamily="@font/regular"
+            android:layout_marginStart="@dimen/margin_15"
+
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUV"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:clickable="false"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_5"
+            android:textSize="@dimen/text_16"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toyota innova Crysta"
+            android:layout_marginStart="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:id="@+id/tv_tyto"
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xylo"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/tv_xylo"
+            android:fontFamily="@font/regular"
+            android:layout_marginStart="@dimen/margin_15"
+
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tavera"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/tv_tavera"
+            android:fontFamily="@font/regular"
+            android:layout_marginStart="@dimen/margin_15"
+
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tempo Traveller(TT)"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:clickable="false"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_5"
+            android:textSize="@dimen/text_16"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tempo Traveller(TT)"
+            android:layout_marginStart="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:id="@+id/tv_temp_traveller"
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mini Bus"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:clickable="false"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_5"
+            android:textSize="@dimen/text_16"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mini Bus 21 seater"
+            android:layout_marginStart="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:id="@+id/tv_mini_bus_21"
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mini Bus 33 seater"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/tv_mini_bus_33"
+            android:fontFamily="@font/regular"
+            android:layout_marginStart="@dimen/margin_15"
+
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:clickable="false"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_5"
+            android:textSize="@dimen/text_16"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus 40 seater"
+            android:layout_marginStart="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:id="@+id/tv_bus_40"
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus 50 seater"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/tv_bus_50"
+            android:fontFamily="@font/regular"
+            android:layout_marginStart="@dimen/margin_15"
+
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:clickable="false"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_5"
+            android:textSize="@dimen/text_16"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:id="@+id/tv_others"
+            android:layout_marginStart="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:textSize="@dimen/text_14"
+            android:gravity="start"/>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/width_30"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/dialog_shape"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_10"
+        android:src="@drawable/done_tick"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/hind"
+
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        android:text="Reference has been send"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/hind"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="Once the user registered you will receive the reward."/>
+
+
+
+
+<TextView
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Ok"
+    android:id="@+id/tv_ok"
+    android:textColor="@color/white"
+    android:textSize="@dimen/text_16"
+    android:padding="@dimen/margin_10"
+    android:layout_marginBottom="@dimen/margin_20"
+    android:layout_gravity="center"
+    android:background="@drawable/darkblueshape"
+    android:layout_marginTop="@dimen/width_30"
+    android:gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>

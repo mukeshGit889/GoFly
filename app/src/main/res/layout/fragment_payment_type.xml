@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".PaymentTypeFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Amount"
+        android:gravity="center"
+       android:layout_marginTop="@dimen/margin_20"
+        android:id="@+id/tv_bookingtext"
+        android:textSize="20sp"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/blue_text"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_amt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bookingtext"
+        android:gravity="center"
+        android:text="INR 50000"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/blue_text"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_accept"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:padding="@dimen/margin_10"
+            android:id="@+id/linear_wallet"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pay from my wallet"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/regular"
+                android:gravity="center">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="balance INR 0"
+                android:textColor="@color/blue_text"
+                android:textSize="20sp"
+                android:fontFamily="@font/regular"
+                android:id="@+id/tv_walletAmt"
+                android:gravity="center">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay through Payment Gatway"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18"
+            android:fontFamily="@font/regular"
+            android:id="@+id/tv_payPaymentGatway"
+
+            android:background="@drawable/bg_accept"
+            android:padding="23dp"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_20"
+            android:gravity="center">
+
+        </TextView>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/proceed_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_text"
+        android:gravity="center"
+        android:text="Proceed to Pay"
+        android:textColor="@color/white"
+        android:textSize="16sp">
+
+    </Button>
+
+
+</RelativeLayout>
